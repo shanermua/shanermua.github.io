@@ -1,41 +1,145 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Shanermua</title>
-		<meta charset="utf-8" />
-		<meta name="theme-color" content="#348CB2">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
-					<header id="header">
-						<h1>Shanermua</h1>
-						<p>IoT enthusiasts&nbsp;&bull;&nbsp; Freshman &nbsp;&bull;&nbsp; Never asked for this</p>
-						<nav>
-							<ul>
-								<li><a href="#" class="icon brands fa-blogger-b"><span class="label">Blog</span></a></li>
-								<li><a href="https://t.me/Shanermua" class="icon brands fa-telegram-plane"><span class="label">Telegram</span></a></li>
-								<li><a href="https://github.com/shanermua" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="mailto:shanermua@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
-					<footer id="footer">
-						<span class="copyright"><a href="http://beian.miit.gov.cn">粤ICP备19136774号-1</a></span>
-						<span class="copyright">&copy; Untitled. Design by HTML5 UP.</span>
-					</footer>
 
-			</div>
+<head>
+	<title>Shanermua</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#348CB2">
+	
+	<!-- Start Icons -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" sizes="180x180" href="static/image/favicon@180.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="static/image/favicon@16.png">
+	<link rel="shortcut icon" href="static/image/favicon@32.png">
+	<!--End Icons-->
+
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Start Opengraph -->
+	<meta property='og:title' content='Shanermua'>
+	<meta property='og:description' content='Lights Will Guide You Home.'>
+	<meta property='og:url' content='https://shaner.wang'>
+	<meta property='og:site_name' content='Shanermua'>
+	<meta property='og:type' content='website'>
+	<meta property='og:image' content='static/image/gravatar@512.png'>
+	<!-- End Opengraph -->
+
+	<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+</head>
+
+<body>
+	<div id="loader">
+		<div class="spinner">
+			<div class="double-bounce1"></div>
+			<div class="double-bounce2"></div>
 		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+	</div>
+
+	<div id="wrapper" class="container">
+		<div class="card-container">
+			<section class="card" id="card--user">
+
+				<header>
+					<div id="background">
+						<div id="background--image" style="background-image: url(static/image/background.jpg)"></div>
+					</div>
+					<figure class="avatar">
+						<img src="static/image/gravatar@100.png" srcset="static/image/gravatar@200.png 2x"
+						    alt="" />
+					</figure>
+				</header>
+
+				<section class="info">
+					<h1 class="name">Shanermua</h1>
+					<p class="bio">Lights will guide you home</p>
+				</section>
+
+				<footer class="social-links is-hidden">
+					<a href="https://blog.shaner.wang" class="blog">
+						<svg class="icon icon-quill">
+							<use xlink:href="#icon-quill"></use>
+						</svg>
+						<span>Blog</span>
+					</a>
+
+					<a href="https://t.me/Shanermua" target="_blank" class="telegram">
+						<svg class="icon icon-telegram">
+							<use xlink:href="#icon-telegram"></use>
+						</svg>
+						<span>Telegram</span>
+					</a>
+
+					<a href="https://github.com/shanermua" target="_blank" class="github">
+						<svg class="icon icon-github">
+							<use xlink:href="#icon-github"></use>
+						</svg>
+						<span>GitHub</span>
+					</a>
+
+					<a href="mailto:shanermua@gamil.com" target="_blank" class="mailto">
+						<svg class="icon icon-envelop">
+							<use xlink:href="#icon-envelop"></use>
+						</svg>
+						<span>Mail</span>
+					</a>
+
+					<!-- Add more links here -->
+				</footer>
+			</section>
+		</div>
+		
+		<span class="copyright"><a href="http://beian.miit.gov.cn" class="copyright">粤ICP备19136774号-1</a></span>
+		<span class="copyright">Copyright &copy; 2019 <a href="https://www.shaner.wang" class="copyright">Shanermua</a>. Design by <a href="https://github.com/CaiJimmy" class="copyright">Jimmy Cai</a>.</span>
+		<br />
+		
+	</div>
+
+	<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg"
+	    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+		<symbol id="icon-github" viewBox="0 0 24 28">
+			<title>github</title>
+			<path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-0.609 0.109-0.828-0.266-0.828-0.578 0-0.391 0.016-1.687 0.016-3.297 0-1.125-0.375-1.844-0.812-2.219 2.672-0.297 5.484-1.313 5.484-5.922 0-1.313-0.469-2.375-1.234-3.219 0.125-0.313 0.531-1.531-0.125-3.187-1-0.313-3.297 1.234-3.297 1.234-0.953-0.266-1.984-0.406-3-0.406s-2.047 0.141-3 0.406c0 0-2.297-1.547-3.297-1.234-0.656 1.656-0.25 2.875-0.125 3.187-0.766 0.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-0.344 0.313-0.656 0.844-0.766 1.609-0.688 0.313-2.438 0.844-3.484-1-0.656-1.141-1.844-1.234-1.844-1.234-1.172-0.016-0.078 0.734-0.078 0.734 0.781 0.359 1.328 1.75 1.328 1.75 0.703 2.141 4.047 1.422 4.047 1.422 0 1 0.016 1.937 0.016 2.234 0 0.313-0.219 0.688-0.828 0.578-4.766-1.594-8.203-6.094-8.203-11.391 0-6.625 5.375-12 12-12zM4.547 19.234c0.031-0.063-0.016-0.141-0.109-0.187-0.094-0.031-0.172-0.016-0.203 0.031-0.031 0.063 0.016 0.141 0.109 0.187 0.078 0.047 0.172 0.031 0.203-0.031zM5.031 19.766c0.063-0.047 0.047-0.156-0.031-0.25-0.078-0.078-0.187-0.109-0.25-0.047-0.063 0.047-0.047 0.156 0.031 0.25 0.078 0.078 0.187 0.109 0.25 0.047zM5.5 20.469c0.078-0.063 0.078-0.187 0-0.297-0.063-0.109-0.187-0.156-0.266-0.094-0.078 0.047-0.078 0.172 0 0.281s0.203 0.156 0.266 0.109zM6.156 21.125c0.063-0.063 0.031-0.203-0.063-0.297-0.109-0.109-0.25-0.125-0.313-0.047-0.078 0.063-0.047 0.203 0.063 0.297 0.109 0.109 0.25 0.125 0.313 0.047zM7.047 21.516c0.031-0.094-0.063-0.203-0.203-0.25-0.125-0.031-0.266 0.016-0.297 0.109s0.063 0.203 0.203 0.234c0.125 0.047 0.266 0 0.297-0.094zM8.031 21.594c0-0.109-0.125-0.187-0.266-0.172-0.141 0-0.25 0.078-0.25 0.172 0 0.109 0.109 0.187 0.266 0.172 0.141 0 0.25-0.078 0.25-0.172zM8.937 21.438c-0.016-0.094-0.141-0.156-0.281-0.141-0.141 0.031-0.234 0.125-0.219 0.234 0.016 0.094 0.141 0.156 0.281 0.125s0.234-0.125 0.219-0.219z"></path>
+		</symbol>
+
+		<symbol id="icon-telegram" viewBox="0 0 28 28">
+			<title>telegram</title>
+			<path d="M18.578 20.422l2.297-10.828c0.203-0.953-0.344-1.328-0.969-1.094l-13.5 5.203c-0.922 0.359-0.906 0.875-0.156 1.109l3.453 1.078 8.016-5.047c0.375-0.25 0.719-0.109 0.438 0.141l-6.484 5.859-0.25 3.563c0.359 0 0.516-0.156 0.703-0.344l1.687-1.625 3.5 2.578c0.641 0.359 1.094 0.172 1.266-0.594zM28 14c0 7.734-6.266 14-14 14s-14-6.266-14-14 6.266-14 14-14 14 6.266 14 14z"></path>
+		</symbol>
+
+		<symbol id="icon-box" viewBox="0 0 24 24">
+			<title>box</title>
+			<path d="M21.337 4.556l-7.962-3.981c-0.006-0.006-0.012-0.006-0.019-0.012-0.419-0.213-0.888-0.319-1.356-0.319s-0.931 0.112-1.338 0.312l-8.013 4.006c-1.019 0.513-1.65 1.537-1.65 2.675v9.531c0 1.131 0.631 2.156 1.644 2.675 0 0 0.006 0 0.006 0.006l7.988 3.994c0.419 0.213 0.888 0.325 1.356 0.325s0.938-0.113 1.344-0.319l8.013-4.006c1.013-0.513 1.644-1.538 1.65-2.675v-9.531c0-1.137-0.637-2.163-1.662-2.681zM11.562 2.344c0.087-0.044 0.237-0.1 0.438-0.1 0.15 0 0.294 0.031 0.425 0.094 0.006 0 0.012 0.006 0.019 0.006l7.313 3.656-7.756 3.881-7.756-3.881 7.319-3.656zM3.55 17.669c-0.344-0.175-0.55-0.519-0.55-0.894 0-0.006 0-0.006 0-0.012v-9.144l8 4v9.775l-7.45-3.725zM20.456 17.663l-7.456 3.725v-9.769l8-4v9.15c0 0.381-0.213 0.725-0.544 0.894z"></path>
+		</symbol>
+
+		<symbol id="icon-envelop" viewBox="0 0 32 32">
+			<title>envelop</title>
+			<path d="M29 4h-26c-1.65 0-3 1.35-3 3v20c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-20c0-1.65-1.35-3-3-3zM12.461 17.199l-8.461 6.59v-15.676l8.461 9.086zM5.512 8h20.976l-10.488 7.875-10.488-7.875zM12.79 17.553l3.21 3.447 3.21-3.447 6.58 8.447h-19.579l6.58-8.447zM19.539 17.199l8.461-9.086v15.676l-8.461-6.59z"></path>
+		</symbol>
+
+		<symbol id="icon-quill" viewBox="0 0 32 32">
+			<title>quill</title>
+			<path d="M0 32c4-12 14.469-32 32-32-8.219 6.594-12 22-18 22s-6 0-6 0l-6 10h-2z"></path>
+		</symbol>
+
+		<!-- Add more icons here -->
+	</svg>
+
+	<script type="text/javascript">
+		if (top.location !== self.location) {
+			top.location = self.location
+		};
+	</script>
+
+	<script>
+		if ('addEventListener' in window) {
+			window.addEventListener('load', function () {
+				document.body.classList.add('loaded');
+			});
+		};
+	</script>
+</body>
+
 </html>
